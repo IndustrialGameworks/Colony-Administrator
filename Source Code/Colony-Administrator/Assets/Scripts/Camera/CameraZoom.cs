@@ -21,14 +21,17 @@ public class CameraZoom : MonoBehaviour {
         {
             if (transform.position.y > cameraDistanceMax && cameraDistance < 0) //negates scrolling if attempting to go above upper limit
             {
-                isZooming = false;
+                //isZooming = false;
             }
             else
             {
-                isZooming = true;
+                /*isZooming = true;
                 transform.position += new Vector3(0.0f,
                 cameraDistance * Mathf.Sin(cameraAngle),  //move camera along its own z axis (instead of worlds z axis) by multiplying y and z by sin/cos of angle of cameras rotation
-                -cameraDistance * Mathf.Cos(cameraAngle)); //z is negative as scrolling needs to be inverted (scroll down to get closer and move down)
+                -cameraDistance * Mathf.Cos(cameraAngle)); //z is negative as scrolling needs to be inverted (scroll down to get closer and move down)*/
+
+                Vector3 forward = transform.TransformDirection(Vector3.forward * cameraDistance); //NEW CODE SOLVES BUG!
+                transform.position += forward;
             }
 
         }

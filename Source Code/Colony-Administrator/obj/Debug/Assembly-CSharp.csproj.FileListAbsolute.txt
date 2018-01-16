@@ -60,3 +60,34 @@ C:\GitHub Projects\Colony-Administrator\Temp\bin\Debug\nunit.framework.xml
 C:\GitHub Projects\Colony-Administrator\Temp\bin\Debug\UnityEngine.Analytics.xml
 C:\GitHub Projects\Colony-Administrator\Temp\bin\Debug\UnityEngine.HoloLens.xml
 C:\GitHub Projects\Colony-Administrator\Temp\bin\Debug\UnityEngine.VR.xml
+C:\GitHub Projects\Colony-Administrator\Source Code\Colony-Administrator\Temp\bin\Debug\Assembly-CSharp.dll
+C:\GitHub Projects\Colony-Administrator\Source Code\Colony-Administrator\Temp\bin\Debug\Assembly-CSharp.pdb
+C:\GitHub Projects\Colony-Administrator\Source Code\Colony-Administrator\Temp\bin\Debug\nunit.framework.dll
+C:\GitHub Projects\Colony-Administrator\Source Code\Colony-Administrator\Temp\bin\Debug\UnityEditor.dll
+C:\GitHub Projects\Colony-Administrator\Source Code\Colony-Administrator\Temp\bin\Debug\UnityEngine.Analytics.dll
+C:\GitHub Projects\Colony-Administrator\Source Code\Colony-Administrator\Temp\bin\Debug\UnityEngine.dll
+C:\GitHub Projects\Colony-Administrator\Source Code\Colony-Administrator\Temp\bin\Debug\UnityEngine.HoloLens.dll
+C:\GitHub Projects\Colony-Administrator\Source Code\Colony-Administrator\Temp\bin\Debug\UnityEngine.Networking.dll
+C:\GitHub Projects\Colony-Administrator\Source Code\Colony-Administrator\Temp\bin\Debug\UnityEngine.TestRunner.dll
+C:\GitHub Projects\Colony-Administrator\Source Code\Colony-Administrator\Temp\bin\Debug\UnityEngine.UI.dll
+C:\GitHub Projects\Colony-Administrator\Source Code\Colony-Administrator\Temp\bin\Debug\UnityEngine.VR.dll
+C:\GitHub Projects\Colony-Administrator\Source Code\Colony-Administrator\Temp\bin\Debug\Mono.Cecil.dll
+C:\GitHub Projects\Colony-Administrator\Source Code\Colony-Administrator\Temp\bin\Debug\Unity.SerializationLogic.dll
+C:\GitHub Projects\Colony-Administrator\Source Code\Colony-Administrator\Temp\bin\Debug\Unity.DataContract.dll
+C:\GitHub Projects\Colony-Administrator\Source Code\Colony-Administrator\Temp\bin\Debug\ICSharpCode.NRefactory.dll
+C:\GitHub Projects\Colony-Administrator\Source Code\Colony-Administrator\Temp\bin\Debug\Unity.UNetWeaver.dll
+C:\GitHub Projects\Colony-Administrator\Source Code\Colony-Administrator\Temp\bin\Debug\Unity.CecilTools.dll
+C:\GitHub Projects\Colony-Administrator\Source Code\Colony-Administrator\Temp\bin\Debug\Mono.Cecil.Pdb.dll
+C:\GitHub Projects\Colony-Administrator\Source Code\Colony-Administrator\Temp\bin\Debug\Mono.Cecil.Mdb.dll
+C:\GitHub Projects\Colony-Administrator\Source Code\Colony-Administrator\Temp\bin\Debug\UnityEngine.xml
+C:\GitHub Projects\Colony-Administrator\Source Code\Colony-Administrator\Temp\bin\Debug\UnityEditor.xml
+C:\GitHub Projects\Colony-Administrator\Source Code\Colony-Administrator\Temp\bin\Debug\UnityEngine.UI.xml
+C:\GitHub Projects\Colony-Administrator\Source Code\Colony-Administrator\Temp\bin\Debug\UnityEngine.Networking.xml
+C:\GitHub Projects\Colony-Administrator\Source Code\Colony-Administrator\Temp\bin\Debug\UnityEngine.TestRunner.xml
+C:\GitHub Projects\Colony-Administrator\Source Code\Colony-Administrator\Temp\bin\Debug\nunit.framework.xml
+C:\GitHub Projects\Colony-Administrator\Source Code\Colony-Administrator\Temp\bin\Debug\UnityEngine.Analytics.xml
+C:\GitHub Projects\Colony-Administrator\Source Code\Colony-Administrator\Temp\bin\Debug\UnityEngine.HoloLens.xml
+C:\GitHub Projects\Colony-Administrator\Source Code\Colony-Administrator\Temp\bin\Debug\UnityEngine.VR.xml
+C:\GitHub Projects\Colony-Administrator\Source Code\Colony-Administrator\obj\Debug\Assembly-CSharp.csprojResolveAssemblyReference.cache
+C:\GitHub Projects\Colony-Administrator\Source Code\Colony-Administrator\obj\Debug\Assembly-CSharp.dll
+C:\GitHub Projects\Colony-Administrator\Source Code\Colony-Administrator\obj\Debug\Assembly-CSharp.pdb

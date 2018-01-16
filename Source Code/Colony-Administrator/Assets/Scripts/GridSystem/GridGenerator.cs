@@ -10,8 +10,8 @@ public class GridGenerator : MonoBehaviour {
     public static int GridHeight = 10; //x axis length (metres)     [DONT MAKE THIS REALLY BIG AND DRAW A MILLION SPHERES]
     public static int GridWidth = 10; //z axis length (metres)      [YOU WILL BREAK EVERYTHING INCLUDING THIS POOR PC :( ]
 
-    static float ArrayMath = ((GridHeight * GridWidth) / size); //does the math to get overall number of grid squares
-    static int ArrayScale = Mathf.RoundToInt(ArrayMath); //needs to print array to screen for debug
+    static float ArrayMath = ((GridHeight / size) * (GridWidth / size)); //does the math to get overall number of grid squares
+    public static int ArrayScale = Mathf.RoundToInt(ArrayMath); //needs to print array to screen for debug
 
     Vector3[] SubGridIndentifier = new Vector3[ArrayScale]; //creates an array to store vector3's with a size worked out by looking at the grid size divided by cell size
 
@@ -30,7 +30,7 @@ public class GridGenerator : MonoBehaviour {
     private void OnDrawGizmos() //debug code that allows us to see grid positions for now
     {
         Gizmos.color = Color.yellow;
-        for(float x =0; x < GridHeight; x += size)
+        for(float x = 0; x < GridHeight; x += size)
         {
             for(float z = 0; z < GridWidth; z += size)
             {

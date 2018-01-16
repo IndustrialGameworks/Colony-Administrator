@@ -4,19 +4,18 @@ using UnityEngine;
 
 public class SubGridGenerator : MonoBehaviour
 {
-
     [SerializeField]
 
     public static float size = 0.5f; //size of grid cells (in metres)
     public static int GridHeight = 10; //x axis length (metres)     [DONT MAKE THIS REALLY BIG AND DRAW A MILLION SPHERES]
     public static int GridWidth = 10; //z axis length (metres)      [YOU WILL BREAK EVERYTHING INCLUDING THIS POOR PC :( ]
 
-    static float ArrayMath = ((GridHeight * GridWidth) / size);
+    static float ArrayMath = ((GridHeight/size) * (GridWidth/size));
     static int ArrayScale = Mathf.RoundToInt(ArrayMath); //needs to print array to screen for debug
 
     Vector3[] SubGridIndentifier = new Vector3[ArrayScale]; //creates an array to store vector3's with a size worked out by looking at the grid size divided by cell size
 
-    public Vector3 GetNearestPointOnGrid(Vector3 position) //general purpose snap-to-grid code
+    public Vector3 GetNearestPointOnGrid (Vector3 position) //general purpose snap-to-grid code
     {
         int xCount = Mathf.RoundToInt(position.x / size);
         int yCount = Mathf.RoundToInt(position.y / size);
@@ -31,9 +30,9 @@ public class SubGridGenerator : MonoBehaviour
     private void OnDrawGizmos() //debug code that allows us to see grid positions for now
     {
         Gizmos.color = Color.cyan;
-        for (float x = 0; x < GridHeight; x += size)
+        for(float x = 0; x < GridHeight; x += size)
         {
-            for (float z = 0; z < GridWidth; z += size)
+            for(float z = 0; z < GridWidth; z += size)
             {
                 var point = GetNearestPointOnGrid(new Vector3(x, 0f, z));
                 Gizmos.DrawSphere(point, 0.1f);
@@ -59,10 +58,10 @@ public class SubGridGenerator : MonoBehaviour
 
     void Update()
     {
-        if(Input.GetKeyDown("v")) //currenty used for debug
+        if (Input.GetKeyDown("v")) //currenty used for debug
         {
 
-             for(int ID = 0; ID <= ArrayScale; ID++)
+            for (int ID = 0; ID < ArrayScale; ID++)
              {
                 Debug.Log (SubGridIndentifier[ID]);
              }
