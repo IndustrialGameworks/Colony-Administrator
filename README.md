@@ -8,4 +8,6 @@ Project files for Colonial Administrator.
 
   13/01/2018 - Committed the base files to github. Mainly so everyone has access to the camera system, which is still work-in-progress.  
   16/01/2018 - Merged master branch with camera fix that needed pushing onto the server.  
-  This push also included work on the block placement system that had been undertaken.
+  This push also included work on the block placement system that had been undertaken.  
+  17/01/2018 - Substantial work on the mouse pointer returning world coordinates.  
+  This is preperation for block placement handler implementation.
