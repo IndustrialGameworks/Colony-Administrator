@@ -15,7 +15,7 @@ public class PointerLocation : MonoBehaviour {
 			Debug.Log (positionOfMouse); //needs to be finalised for debug mode
 			NearestPointOnGrid = NewGrid.GetNearestPointOnGrid (positionOfMouse); //retrieves getnearestpointongrid method from the new grid
 		} else {
-			Debug.Log ("Raycast cannot find terrain");
+			Debug.Log ("Raycast cannot find terrain");//debug error message returned if raycast cant find terrain
 		}
 	}
 
