@@ -53,6 +53,7 @@
      <Compile Include="Assets\Scripts\GridSystem\GridGenerator.cs" />
      <Compile Include="Assets\Scripts\GridSystem\GridOccupation.cs" />
      <Compile Include="Assets\Scripts\GridSystem\SubGridGenerator.cs" />
+     <Compile Include="Assets\Scripts\MousePointer\PointerLocation.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

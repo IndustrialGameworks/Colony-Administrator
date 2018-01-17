@@ -12,7 +12,7 @@ public class GridGenerator : MonoBehaviour {
 
     static float ArrayMath = ((GridHeight / size) * (GridWidth / size)); //does the math to get overall number of grid squares
     public static int ArrayScale = Mathf.RoundToInt(ArrayMath); //needs to print array to screen for debug
-
+	public Vector3 NearestPointOnGrid;
     Vector3[] SubGridIndentifier = new Vector3[ArrayScale]; //creates an array to store vector3's with a size worked out by looking at the grid size divided by cell size
 
     public Vector3 GetNearestPointOnGrid (Vector3 position) //general purpose snap-to-grid code

@@ -6,7 +6,7 @@ public class CameraZoom : MonoBehaviour {
 
     float cameraDistanceMax = 10f;
     float cameraDistanceMin = 2.5f;
-    float cameraDistance;
+    public float cameraDistance;
     float scrollSpeed = 400f;
     float cameraAngle = 35f; //needs to change with the camera X rotation
     bool isZooming; //unused check of whether camera is zooming
