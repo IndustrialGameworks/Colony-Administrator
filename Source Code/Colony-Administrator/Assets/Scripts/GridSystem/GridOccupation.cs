@@ -7,7 +7,7 @@ public class GridOccupation : MonoBehaviour
 
     [SerializeField]
 
-    bool[] OccupationArray = new bool[GridGenerator.ArrayScale]; //creates an array to store vector3's with a size worked out by looking at the grid size divided by cell size
+    public static bool[] OccupationArray = new bool[GridGenerator.ArrayScale]; //creates an array to store vector3's with a size worked out by looking at the grid size divided by cell size
 
     private void InitializeOccupationArray() //debug code that allows us to see grid positions for now
     {

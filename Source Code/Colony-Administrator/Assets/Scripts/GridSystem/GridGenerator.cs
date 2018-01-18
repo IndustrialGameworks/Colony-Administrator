@@ -13,7 +13,7 @@ public class GridGenerator : MonoBehaviour {
     static float ArrayMath = ((GridHeight / size) * (GridWidth / size)); //does the math to get overall number of grid squares
     public static int ArrayScale = Mathf.RoundToInt(ArrayMath); //needs to print array to screen for debug
 	public Vector3 NearestPointOnGrid;
-    Vector3[] SubGridIndentifier = new Vector3[ArrayScale]; //creates an array to store vector3's with a size worked out by looking at the grid size divided by cell size
+	public static Vector3[] GridIndentifier = new Vector3[ArrayScale]; //creates an array to store vector3's with a size worked out by looking at the grid size divided by cell size
 
     public Vector3 GetNearestPointOnGrid (Vector3 position) //general purpose snap-to-grid code
     {
@@ -42,15 +42,15 @@ public class GridGenerator : MonoBehaviour {
 
     void Start() //loads Vector3 coordinates into array
     {
-        int SubGridID = 0;  //starts at the lowest subgrid ID
+        int GridID = 0;  //starts at the lowest subgrid ID
 
         for (float x = 0; x < GridHeight; x += size) //runs through getting nearest point on grid again, coordinates stored in SubGridIndentifier
         {
             for (float z = 0; z < GridWidth; z += size)
             {
                 var point = GetNearestPointOnGrid(new Vector3(x, 0f, z)); //assigns nearest point on grid to "point" on each iteration
-                SubGridIndentifier[SubGridID] = point; //loads the current vector of "point" into the array
-                SubGridID++; //runs through all the subgrid ID's on each iteration of loop
+                GridIndentifier[GridID] = point; //loads the current vector of "point" into the array
+                GridID++; //runs through all the subgrid ID's on each iteration of loop
             }
         }
 
@@ -63,7 +63,7 @@ public class GridGenerator : MonoBehaviour {
 
             for (int ID = 0; ID < ArrayScale; ID++)
             {
-                Debug.Log(SubGridIndentifier[ID]);
+                Debug.Log(GridIndentifier[ID]);
             }
         }
     }
