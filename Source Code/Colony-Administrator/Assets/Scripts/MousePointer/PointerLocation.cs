@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PointerLocation : MonoBehaviour {
-	Vector3 positionOfMouse;
-	Vector3 NearestPointOnGrid;
+	public static Vector3 positionOfMouse;
+	public static Vector3 NearestPointOnGrid;
 	GridGenerator NewGrid = new GridGenerator(); //create an instance of the grid here so grid methods can be accessed
 
 	Vector3 occupationArrayVector; //stores the value as it appears in the array
@@ -24,14 +24,10 @@ public class PointerLocation : MonoBehaviour {
 			Debug.Log ("Raycast cannot find terrain");//debug error message returned if raycast cant find terrain
 		}
 
-		OccupationCheck (); 
+		PointerInput (); //call mouse input
+		OccupationCheck (); //check occupation
 		GridMatch (); //debugging data, can be removed when complete
 
-		if (Input.GetMouseButtonDown(0)) //This allows to simulate grid occupation
-		{
-			Debug.Log ("Clicked!");
-			GridOccupation.OccupationArray[currentGridIndex] = true; //sets the value in the array to true to simulate occupation
-		}
 	}
 
 	void OnGUI()
@@ -43,6 +39,19 @@ public class PointerLocation : MonoBehaviour {
 		GUILayout.Label ("Current Grid index: " + currentGridIndex);
 		GUILayout.Label ("Is occupied: " + isOccupied);
 		GUILayout.EndArea(); //close top left section of gui
+	}
+
+	void PointerInput()
+	{
+		if (Input.GetMouseButtonDown(0)) //This allows to simulate grid occupation
+		{
+			Debug.Log ("Left Click");
+			GridOccupation.OccupationArray[currentGridIndex] = true; //sets the value in the array to true to simulate occupation
+		}
+		if (Input.GetMouseButtonDown(1)) //This allows to simulate grid occupation
+		{
+			Debug.Log ("Right Click");
+		}
 	}
 
 	void OccupationCheck()
