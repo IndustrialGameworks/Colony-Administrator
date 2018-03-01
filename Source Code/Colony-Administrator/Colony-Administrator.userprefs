@@ -1,14 +1,12 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\BuildingSystem\BuildingAvailabilityMarker.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Grid System\GridGenerator.cs">
     <Files>
-      <File FileName="Assets\Scripts\MousePointer\PointerLocation.cs" Line="22" Column="59" />
-      <File FileName="Assets\Scripts\GridSystem\GridGenerator.cs" Line="15" Column="36" />
-      <File FileName="Assets\Scripts\GridSystem\GridOccupation.cs" Line="37" Column="1" />
-      <File FileName="Assets\Scripts\Camera\CameraRotation.cs" Line="21" Column="10" />
-      <File FileName="Assets\Scripts\GridSystem\SubGridGenerator.cs" Line="41" Column="6" />
-      <File FileName="Assets\Scripts\BuildingSystem\BuildingAvailabilityMarker.cs" Line="18" Column="113" />
-      <File FileName="Assets\Scripts\Camera\CameraMovementEdge.cs" Line="28" Column="29" />
+      <File FileName="Assets\Scripts\Camera\CameraMovementEdge.cs" Line="34" Column="13" />
+      <File FileName="Assets\Scripts\MousePointer\PointerLocation.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Grid System\GridGenerator.cs" Line="26" Column="24" />
+      <File FileName="Assets\Scripts\Grid System\GridOccupation.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Building System\BuildingAvailabilityMarker.cs" Line="23" Column="72" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

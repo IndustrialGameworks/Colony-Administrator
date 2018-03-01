@@ -9,7 +9,7 @@ public class PointerLocation : MonoBehaviour {
 
 	Vector3 occupationArrayVector; //stores the value as it appears in the array
 	bool gridMatch; //if the nearest point on grid matches the array value, changes to true
-	bool isOccupied;
+	public static bool isOccupied;
 	Vector3 checkGrid; //stores nearest point on grid to allow looking for changes in mouse position
 	int currentGridIndex; //current index number of the grid the mouse is located at
 
@@ -51,6 +51,7 @@ public class PointerLocation : MonoBehaviour {
 		if (Input.GetMouseButtonDown(1)) //This allows to simulate grid occupation
 		{
 			Debug.Log ("Right Click");
+			GridOccupation.OccupationArray[currentGridIndex] = false; //sets the value in the array to true to simulate occupation
 		}
 	}
 

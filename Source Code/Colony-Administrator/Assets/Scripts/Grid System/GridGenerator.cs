@@ -7,8 +7,9 @@ public class GridGenerator : MonoBehaviour {
     [SerializeField]
 
     public static float size = 1.0f; //size of grid cells (in metres)
-    public static int GridHeight = 10; //x axis length (metres)     [DONT MAKE THIS REALLY BIG AND DRAW A MILLION SPHERES]
-    public static int GridWidth = 10; //z axis length (metres)      [YOU WILL BREAK EVERYTHING INCLUDING THIS POOR PC :( ]
+    public static int GridHeight = 17; //x axis length (metres)     [DONT MAKE THIS REALLY BIG AND DRAW A MILLION SPHERES]
+    public static int GridWidth = 17; //z axis length (metres)      [YOU WILL BREAK EVERYTHING INCLUDING THIS POOR PC :( ]
+	public static float offset = 0.5f;
 
     static float ArrayMath = ((GridHeight / size) * (GridWidth / size)); //does the math to get overall number of grid squares
     public static int ArrayScale = Mathf.RoundToInt(ArrayMath); //needs to print array to screen for debug
@@ -22,7 +23,7 @@ public class GridGenerator : MonoBehaviour {
         int zCount = Mathf.RoundToInt(position.z / size); //division and multiplication of size allows different sizes of grid to be rounded to
 
         Vector3 result = new Vector3( //(the) result is the rounded version of the input vector
-            (float)xCount * size,
+			(float)xCount * size,
             (float)yCount * size,
             (float)zCount * size);
         return result;
@@ -35,6 +36,7 @@ public class GridGenerator : MonoBehaviour {
             for(float z = 0; z < GridWidth; z += size)
             {
                 var point = GetNearestPointOnGrid(new Vector3(x, 0f, z));
+				point += new Vector3 (-offset, 0, -offset);
                 Gizmos.DrawSphere(point, 0.1f);
             }
         }
